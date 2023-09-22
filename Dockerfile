@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
     clang
 
 # Set the working directory
-WORKDIR /CS332-532
+WORKDIR /root
 
-# Set the default command to run when the container starts
-CMD ["/bin/bash"]
+CMD ["tail", "-f", "/dev/null"]
